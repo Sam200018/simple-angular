@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="card text-primary mb-3">
+        <div class="card-header text-center">
+            <h1 class="card-title">
+                {{titulo}}
+            </h1>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group text-center ">
+                    <label> Numero uno</label >
+                    <input type="number" placeholder = "Numero uno" name="numeroUno" [(ngModel)]="numeroUno">
+                    <label> Numero dos</label >
+                    <input type="number" placeholder = "Numero dos" name="numeroDos" [(ngModel)]="numeroDos">
+                </div>
+
+                <div class="mt-3 d-flex gap-3 justify-content-center">
+                        <div>
+                            <button type="button" class="btn btn-outline-success" (click)="multiplicar()">
+                                Multiplicar
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-outline-danger" (click)="dividir()">
+                                Dividir
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-outline-primary" (click)="sumar()">
+                                Sumar
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-outline-info" (click)="restar()">
+                                Restar
+                            </button>
+                        </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="card-footer">
+            EL resultado es: {{ resultado }}
+        </div>
+    </div>
+</div>
